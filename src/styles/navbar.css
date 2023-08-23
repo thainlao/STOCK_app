@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 11px;
+    position: fixed;
+    top: 0; /* Закрепить сверху */
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    z-index: 1;
+    opacity: 0.9;
+}
+
+.navbar_left {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.left_text { 
+    cursor: pointer;
+    font-size: 17px;
+    opacity: 0.8;
+    transition: all 0.2s ease-out;
+    &:hover {
+        opacity: 1;
+    }
+}
+@media (max-width: 1200px) {
+    .left_text {
+      
+    }
+}
+@media (max-width: 767px) {
+    .left_text{
+        font-size: 13px;
+    }
+}
+
+.right_text {
+    cursor: pointer;
+    font-size: 17px;
+    width: 170px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffdd2d;
+    padding: 6px;
+    transition: all 0.2s ease;
+    border-radius: 20px;
+    color: black;
+    &:hover {
+        background-color: #eecd2b;
+    }
+}
+@media (max-width: 1200px) {
+    .right_text {
+      
+    }
+}
+@media (max-width: 767px) {
+    .right_text{
+        font-size: 13px;
+    }
+}
+
+.left_title {
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+ &:hover {
+    opacity: 0.8;
+}
+}
+@media (max-width: 1200px) {
+    .left_title {
+      
+    }
+}
+@media (max-width: 767px) {
+    .left_title{
+        font-size: 13px;
+    }
+}

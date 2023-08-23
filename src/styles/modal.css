@@ -1,0 +1,235 @@
+.modalbody {
+    height: auto;
+}
+
+.modal_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.threecards {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+}
+@media (max-width: 1200px) {
+    .threecards {
+      
+    }
+}
+@media (max-width: 767px) {
+    .threecards{
+        flex-direction: column;      
+    }
+}
+
+.card_modal {
+    background-color: rgb(255, 255, 255);
+    height: 125px;
+    width: 250px;
+    border-radius: 15px;
+    padding-top: 2.3rem;
+    position: relative;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub_text {
+    font-size: 12px;
+    display: flex;
+    margin: 0 auto;
+    max-width: 170px;
+}
+
+.number {
+    background-color: grey;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -15%;
+    border-radius: 8px;
+    color: white;
+    font-size: 19px;
+}
+
+/* mainmodal main_modal main_modal*/
+
+.main_modal {
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0px 0px 7px rgb(177, 175, 175);
+    border-top: 4px solid rgb(94, 92, 92);
+    height: 600px;
+    position: relative;
+    width: 800px;
+    margin-bottom: 2rem;
+}
+@media (max-width: 1200px) {
+    .main_modal {
+      
+    }
+}
+@media (max-width: 767px) {
+    .main_modal{
+        width: 320px;
+        height: 600px;
+    }
+}
+
+.main_modal_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 480px;
+    margin: 0 auto;
+    padding-top: 2.5rem;
+}
+
+.main_modal_input {
+    width: 480px;
+    height: 50px;
+    border-radius: 10px;
+    transition: background-color 0.2s ease-in;
+}
+@media (max-width: 1200px) {
+    .main_modal_input {
+      
+    }
+}
+@media (max-width: 767px) {
+    .main_modal_input{
+        width: 320px;
+        height: 35px;
+    }
+}
+
+.main_modal_input.error {
+    background: linear-gradient(#fbe4e3, #f8d6d4);
+    transition: all 0.3s ease-in;
+&:focus {
+    background: white;
+    border: 1px solid black;
+}
+}
+
+.main_modal_input.valid {
+    background: linear-gradient(#e5fbe3, #d8f7d6);
+    transition: all 0.3s ease-in;
+&:focus {
+    background: white;
+    border: 1px solid black;
+}
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+}
+
+.modal_button {
+    background-color: #ffdd2d;
+    height: 50px;
+    width: 150px;
+    font-size: 14px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in;
+    position: absolute;
+    top: 85%;
+&:hover {
+    background-color: #eecd2b;
+}
+}
+
+.modal_button:disabled {
+    background-color: gray;
+    color: white; 
+    cursor: not-allowed;
+  }
+
+/* Modal styles */
+.modal {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+    overflow: hidden;
+  }
+  
+  .modal-content {
+    background-color: white;
+    margin: 20% auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 5px;
+    position: relative;
+    height: 450px;
+    width: 450px;
+  }
+  @media (max-width: 1200px) {
+    .modal-content {
+      
+    }
+}
+@media (max-width: 767px) {
+    .modal-content{
+        width: 320px;
+        height: 460px;
+        padding: 30px;
+    }
+}
+  
+  .close {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+    font-weight: bold;
+    color: #888;
+    cursor: pointer;
+    height: 40px;
+    background-color: #ffdd2d;
+    width: 180px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    border-radius: 10px;
+    transition: all 0.2s ease-in;
+  &:hover {
+    background-color: #e2c32a;
+  }
+}
+
+.text {
+    font-family: 'Abel', sans-serif;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.modal_text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 19px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 280px;
+    white-space: nowrap;
+}

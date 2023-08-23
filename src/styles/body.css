@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap');
+.main_body {
+    height: 100vh;
+}
+
+/* investment_body investment_body*/
+
+.investment_body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: 10%;
+    gap: 2.5rem;
+}
+
+.body_text {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.body_bigtext {
+    font-size: 26px;
+    font-weight: 700;
+    font-family: 'Saira Condensed', sans-serif;
+}
+@media (max-width: 1200px) {
+    .body_bigtext {
+      font-size: 21px;
+    }
+}
+@media (max-width: 767px) {
+    .body_bigtext{
+        font-size: 14px;
+    }
+}
+
+.body_smalltext {
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.body_button {
+    background-color: #ffdd2d;
+    height: 60px;
+    width: 150px;
+    font-size: 14px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+&:hover {
+    background-color: #eecd2b;
+}
+}
+
+.body_img {
+    background: transparent;
+}

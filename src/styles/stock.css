@@ -1,0 +1,141 @@
+.stockbody {
+    
+}
+@media (max-width: 1200px) {
+    .stockbody {
+      
+    }
+}
+@media (max-width: 767px) {
+    .stockbody{
+        height: 180vh;        
+    }
+}
+
+.stock_elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-direction: column;
+    min-height: 100vh;
+    height: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.stock_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.stock_small_cards {
+    display: grid;
+    max-width: 800px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    height: 230px;
+}
+@media (max-width: 1200px) {
+    .stock_small_cards {
+      
+    }
+}
+@media (max-width: 767px) {
+    .stock_small_cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.stock_card {
+    border-radius: 15px;
+    transition: all 0.3s ease-out;
+    &:hover {
+        transform: scale(1.025);
+    }}
+
+.stock_card_big {
+    background-color: #e2e8f0;
+    width: 800px;
+    height: 230px;
+    border-radius: 15px;
+    transition: all 0.3s ease-out;
+    &:hover {
+        transform: scale(1.025);
+    }
+}
+
+@media (max-width: 1200px) {
+    .stock_card_big {
+      
+    }
+}
+@media (max-width: 767px) {
+    .stock_card_big{
+        width: 300px;
+        margin: 0 auto;
+        height: 180px;
+    }
+}
+
+.big_card_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 14px;
+}
+
+.small_card_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.stock_img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+@media (max-width: 1200px) {
+    .stock_img {
+      
+    }
+}
+@media (max-width: 767px) {
+    .stock_img{
+        width: 100px;
+        height: 120px;
+    }
+}
+
+.stock_img_s {
+    width: 180px;
+    height: 150px;
+    object-fit: cover;
+    margin: 20px auto;
+}
+@media (max-width: 1200px) {
+    .stock_img_s {
+      
+    }
+}
+@media (max-width: 767px) {
+    .stock_img_s{
+        width: 100px;
+        height: 120px;
+    }
+}
+
+
+.card_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
